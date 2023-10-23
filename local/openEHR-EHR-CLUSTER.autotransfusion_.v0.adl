@@ -1,5 +1,5 @@
-archetype (adl_version=1.4; uid=0297b001-fe5f-4f10-9ed6-baa4dc9bc0ce)
-	openEHR-EHR-CLUSTER.birth_canal.v0
+archetype (adl_version=1.4; uid=e8bd5684-dce5-4166-88f0-55d8cc85ffb1)
+	openEHR-EHR-CLUSTER.autotransfusion_.v0
 
 concept
 	[at0000]
@@ -9,7 +9,7 @@ language
 
 description
 	original_author = <
-		["date"] = <"2023-09-27">
+		["date"] = <"2023-10-16">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -23,16 +23,16 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3510f4754794f4d425c370155ef496d1">
-		["build_uid"] = <"8d25fca0-7163-3c7a-9960-595f60eb1310">
+		["MD5-CAM-1.0.1"] = <"01d22ce9e66fbba4575914fd0b8ce568">
+		["build_uid"] = <"53c8f8b2-bdf3-38dc-9c1b-d8db81def313">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Birth canal
+	CLUSTER[at0000] matches {    -- Autotransfusion
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..*} matches {    -- DV_CODED_TEXT
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Autotransfusion
 				value matches {
-					DV_CODED_TEXT matches {*}
+					DV_BOOLEAN matches {*}
 				}
 			}
 		}
@@ -43,11 +43,11 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Birth canal">
-					description = <"Birth canal">
+					text = <"Autotransfusion">
+					description = <"Autotransfusion ">
 				>
 				["at0001"] = <
-					text = <"DV_CODED_TEXT">
+					text = <"Autotransfusion">
 					description = <"">
 				>
 			>

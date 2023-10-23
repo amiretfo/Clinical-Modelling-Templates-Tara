@@ -1,5 +1,5 @@
-archetype (adl_version=1.4; uid=f7fdcde9-5018-4a9a-a67f-6f57e5ad9564)
-	openEHR-EHR-CLUSTER.position_of_the_woman_during_labour.v0
+archetype (adl_version=1.4; uid=b32576fa-1b09-46df-945b-93d6421308c0)
+	openEHR-EHR-CLUSTER.pregnancy_risk_level.v0
 
 concept
 	[at0000]
@@ -9,7 +9,7 @@ language
 
 description
 	original_author = <
-		["date"] = <"2023-09-28">
+		["date"] = <"2023-10-02">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -23,25 +23,22 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"89c82afb4e3ba7d2750226772bd1599f">
-		["build_uid"] = <"f625fe4e-e0eb-3de7-ac88-c5a6ead7c5f2">
+		["MD5-CAM-1.0.1"] = <"718665e76abe5cf20badf231acc93ee2">
+		["build_uid"] = <"b0705c97-9882-379b-9772-fa363fc34e8a">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- position of the woman during labour
+	CLUSTER[at0000] matches {    -- Pregnancy risk level
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Positions
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Risk
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0002,    -- On hands and knees
-							at0003,    -- Squatting
-							at0004,    -- Lying on your side
-							at0005,    -- Sitting
-							at0006,    -- Decubitus
-							at0007,    -- others
-							at0008]    -- vertical
+							at0002,    -- Normal
+							at0003,    -- Low
+							at0004,    -- High
+							at0005]    -- Very high
 						}
 					}
 				}
@@ -54,39 +51,27 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"position of the woman during labour">
-					description = <"position of the woman during labour">
+					text = <"Pregnancy risk level">
+					description = <"Pregnancy risk level">
 				>
 				["at0001"] = <
-					text = <"Positions">
+					text = <"Risk">
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"On hands and knees">
+					text = <"Normal">
 					description = <"">
 				>
 				["at0003"] = <
-					text = <"Squatting">
+					text = <"Low">
 					description = <"">
 				>
 				["at0004"] = <
-					text = <"Lying on your side">
+					text = <"High">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"Sitting">
-					description = <"">
-				>
-				["at0006"] = <
-					text = <"Decubitus">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"others">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"vertical">
+					text = <"Very high">
 					description = <"">
 				>
 			>

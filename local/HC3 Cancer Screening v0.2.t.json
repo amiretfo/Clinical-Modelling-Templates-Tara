@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.1.0",
+      "sem_ver" : "4.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "121570ea6bb7d7644806a8997d515995",
+      "MD5-CAM-1.0.1" : "8e4c2fe8f4446a1d4a53cd690a6db0c0",
       "original_language" : "ISO_639-1::en",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
@@ -278,12 +278,12 @@
       "existence" : "0..1",
       "children" : [ {
         "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "ADMIN_ENTRY",
+        "rmTypeName" : "ACTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.0.1",
+        "nodeId" : "at0.0.9",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-screening_participation_details-002.v0",
+        "archetypeRef" : "openEHR-EHR-ACTION.ovl-screening_activity-001.v0",
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -292,7 +292,7 @@
         "nodeId" : "at0.0.2",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-003.v1",
+        "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-004.v1",
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -301,7 +301,7 @@
         "nodeId" : "at0.0.3",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-004.v1",
+        "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-005.v1",
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -310,7 +310,7 @@
         "nodeId" : "at0.0.4",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-recommendation-005.v2",
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-recommendation-006.v2",
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -319,7 +319,7 @@
         "nodeId" : "at0.0.5",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-clinical_synopsis-006.v1",
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-clinical_synopsis-007.v1",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -333,7 +333,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "HC3 Cancer Screening v0.1",
+          "text" : "HC3 Cancer Screening",
           "description" : "Document to communicate information to others about any stand-alone procedure or operation performed."
         },
         "at0000" : {
@@ -347,7 +347,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "HC3 Cancer Screening",
+          "text" : "HC3 Cancer Screening v0.2",
           "description" : "Dokument for å kommunisere informasjon om enkeltstående prosedyrer eller operasjoner som er utført."
         }
       },
@@ -355,7 +355,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "HC3 Cancer Screening",
+          "text" : "HC3 Cancer Screening v0.2",
           "description" : "Documento para comunicar informações aos outros sobre qualquer procedimento isolado ou operação executada."
         },
         "at0000" : {
@@ -414,7 +414,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "HC3 Cancer Screening",
+          "text" : "HC3 Cancer Screening v0.2",
           "description" : "Ein Dokument, um Informationen über jedes eigenständige Verfahren oder jeden durchgeführten Vorgang zu übermitteln."
         },
         "at0000" : {
@@ -1076,7 +1076,7 @@
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
-  "templateId" : "HC3 Cancer Screening",
+  "templateId" : "HC3 Cancer Screening v0.2",
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
@@ -1231,114 +1231,6 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0002.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0023.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0005.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0011.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0012.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0013.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "ef244692-23eb-3dbd-a1a3-9a9658a33114",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "0f617480-180d-4b4c-86fe-bd3a5a7ed503",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "d61a25df67c7f31118c7d64d049cf3d2"
-      },
-      "details" : {
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "keywords" : [ ],
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.screening_participation_details.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-screening_participation_details-002.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "ADMIN_ENTRY",
-      "nodeId" : "at0000.1",
       "attributes" : [ ],
       "attributeTuples" : [ ]
     },
@@ -1353,7 +1245,7 @@
       "valueSets" : { }
     },
     "adlVersion" : "1.4",
-    "buildUid" : "59bf0172-5e7c-39ec-915d-b18b27deceaf",
+    "buildUid" : "ef244692-23eb-3dbd-a1a3-9a9658a33114",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
@@ -1524,7 +1416,7 @@
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-ACTION.ovl-procedure-003.v1"
+      "value" : "openEHR-EHR-ACTION.ovl-procedure-004.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -2674,7 +2566,7 @@
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-ACTION.ovl-procedure-004.v1"
+      "value" : "openEHR-EHR-ACTION.ovl-procedure-005.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -3798,7 +3690,7 @@
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-EVALUATION.ovl-recommendation-005.v2"
+      "value" : "openEHR-EHR-EVALUATION.ovl-recommendation-006.v2"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -3819,12 +3711,6 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0006.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0002.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
@@ -4141,7 +4027,7 @@
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-EVALUATION.ovl-clinical_synopsis-006.v1"
+      "value" : "openEHR-EHR-EVALUATION.ovl-clinical_synopsis-007.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -4428,6 +4314,70 @@
       "accreditation" : "What goes here?",
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "cf9921bf-cbc0-4efc-8704-a34014776ae6",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "1ca3c358c9a17c7ea41b13ad9a684b72"
+      },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ACTION.screening_activity.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ACTION.ovl-screening_activity-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ACTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "d166792a-c8dd-3d10-995d-3d632d4a7a28",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {

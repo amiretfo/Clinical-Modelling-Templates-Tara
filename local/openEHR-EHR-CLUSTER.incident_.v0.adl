@@ -1,5 +1,5 @@
-archetype (adl_version=1.4; uid=7fd527ef-32dc-44d2-bdc3-685d23094f40)
-	openEHR-EHR-CLUSTER.type_of_labour_start.v0
+archetype (adl_version=1.4; uid=c0755747-f7f5-4586-83a6-1b480b26b146)
+	openEHR-EHR-CLUSTER.incident_.v0
 
 concept
 	[at0000]
@@ -9,7 +9,7 @@ language
 
 description
 	original_author = <
-		["date"] = <"2023-09-27">
+		["date"] = <"2023-10-18">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -23,16 +23,16 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5e5611e360ccb66f2164eaff2390d98b">
-		["build_uid"] = <"80061a09-e10a-3072-a3bc-d2fda93a40c6">
+		["MD5-CAM-1.0.1"] = <"e657d997af339d84cced13bd3f8296c4">
+		["build_uid"] = <"af969bf4-59ae-303b-bdb8-f0c9971dd762">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Type of labour start
+	CLUSTER[at0000] matches {    -- Incident
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+			ELEMENT[at0001] occurrences matches {0..*} matches {    -- Correct procedure?
 				value matches {
-					DV_CODED_TEXT matches {*}
+					DV_BOOLEAN matches {*}
 				}
 			}
 		}
@@ -43,11 +43,11 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Type of labour start">
-					description = <"Type of labour start">
+					text = <"Incident">
+					description = <"Incident ">
 				>
 				["at0001"] = <
-					text = <"DV_CODED_TEXT">
+					text = <"Correct procedure?">
 					description = <"">
 				>
 			>

@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "6.1.0",
+      "sem_ver" : "6.2.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959",
-      "MD5-CAM-1.0.1" : "34279e580a46fd866d50fefe40663fcd"
+      "MD5-CAM-1.0.1" : "15127891065d7ee2aefd25a30139d2fb"
     },
     "details" : {
       "de" : {
@@ -307,7 +307,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "HC3 Spirometry test result v0.2",
+          "text" : "HC3 Spirometry test result",
           "description" : "Document to communicate information to others about the result of a test or assessment."
         }
       },
@@ -821,7 +821,7 @@
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
-  "templateId" : "HC3 Spirometry test result",
+  "templateId" : "HC3 Spirometry test result v0.2",
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
